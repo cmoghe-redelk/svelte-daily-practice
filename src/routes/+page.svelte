@@ -1,2 +1,7 @@
+<script lang="ts">
+	import { Rating } from '$lib';
+	let rating: number = $state(2.5);
+</script>
+
 <h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<Rating interactive={true} maxRating={5} starSize={'20px'} rating={rating} />
